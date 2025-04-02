@@ -1,4 +1,23 @@
-<?php require_once('config.php'); ?>
+<?php require_once('config.php'); 
+
+if(isset($_POST['Submit']))
+{
+    if( ($_POST['Username'] == $Username) && ($_POST['Password'] == $Password) )
+    {
+        echo 'Success';
+    }
+    else
+    {
+        echo 'Incorrect Username or Password';
+    }
+}
+
+
+
+
+
+
+?>
 
 
 

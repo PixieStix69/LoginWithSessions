@@ -1,14 +1,22 @@
-<?php require_once('config.php'); 
+<?php 
+require_once('config.php'); 
 
 if(isset($_POST['Submit']))
 {
+    //debugging test pls work
+    echo "Form submitted!<br>";
+    echo "Username submitted: " . $_POST['Username'] . "<br>";
+    echo "Password submitted: " . $_POST['Password'] . "<br>";
+    echo "Expected Username: " . $Username . "<br>";
+    echo "Expected Password: " . $Password . "<br>";
+
     if( ($_POST['Username'] == $Username) && ($_POST['Password'] == $Password) )
     {
-        echo 'Success';
+        echo '<div style="color: green;">Success</div>';//adding colours to make it easier to see 
     }
     else
     {
-        echo 'Incorrect Username or Password';
+        echo '<div style="color: red;">Incorrect Username or Password</div>';
     }
 }
 ?>

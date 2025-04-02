@@ -11,27 +11,21 @@ if(isset($_POST['Submit']))
         echo 'Incorrect Username or Password';
     }
 }
-
-
-
-
-
-
 ?>
 
-
-
-<link rel="stylesheet" type="text/css" href="../css/signin.css">
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/signin.css">
     <title>Sign in</title>
 </head>
 
-
 <body>
 <div class="container">
-    <form action="" method="post" name="Login_Form" class="form-signin">
+    <form action="login.php" method="post" name="Login_Form" class="form-signin">
         <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="inputUsername" >Username</label>
-        <input name="Username" type="username" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+        <label for="inputUsername">Username</label>
+        <input name="Username" type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
         <label for="inputPassword">Password</label>
         <input name="Password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
         <div class="checkbox">
@@ -40,7 +34,6 @@ if(isset($_POST['Submit']))
             </label>
         </div>
         <button name="Submit" value="Login" class="button" type="submit">Sign in</button>
-
     </form>
 </div>
 </body>

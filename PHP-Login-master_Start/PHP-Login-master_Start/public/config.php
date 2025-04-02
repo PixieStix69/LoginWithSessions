@@ -1,5 +1,5 @@
 <?php
 
 /* Define username and password */
-$Username = "Steve";
-$Password = "pass";
+$Username = "Pixie";
+$Password = "meow";

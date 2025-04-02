@@ -1,4 +1,7 @@
-<?php require_once('../template/header.php'); ?>
+<?php require_once('config.php'); ?>
+
+
+
 <link rel="stylesheet" type="text/css" href="../css/signin.css">
     <title>Sign in</title>
 </head>
